@@ -1,5 +1,10 @@
+elastic-query-service:
+  version: 1.0
+
 server:
   port: 8183
+  servlet:
+    context-path: /elastic-query-service
 
 elastic-query-config:
   text-field: text
@@ -7,5 +12,11 @@ elastic-query-config:
 elastic-config:
   index-name: twitter-index
   connection-url: http://localhost:9200
-  connection-timeout: 5000
-  socket-timeout: 30000
+  connect-timeout-ms: 5000
+  socket-timeout-ms: 30000
+
+
+  user-config:
+    username: test
+    password: '{cipher}73617456b40fc6064d8e86958db8c2f387d226860767fd50ffaa67f175f75cb7b24396dd04469845eaaffd1e2679e76f'
+    roles: USER
