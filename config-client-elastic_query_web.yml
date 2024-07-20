@@ -1,8 +1,3 @@
-server:
-    port: 8184
-    servlet:
-      context-path: /elastic-query-web-client
-
 elastic-query-web-client:
   webclient:
     connect-timeout-ms: 10000
@@ -12,6 +7,11 @@ elastic-query-web-client:
     content-type: 'application/vnd.api.v1+json'
     accept-type: application/json
     base-url: 'http://elastic-query-service/elastic-query-service/documents'
+
+server:
+  port: 8184
+  servlet:
+    context-path: /elastic-query-web-client
 
 spring:
   thymeleaf:
