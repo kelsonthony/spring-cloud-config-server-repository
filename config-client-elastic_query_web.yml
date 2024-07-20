@@ -1,0 +1,23 @@
+server:
+    port: 8184
+    servlet:
+      context-path: /elastic-query-web-client
+
+elastic-query-web-client:
+  webclient:
+    connect-timeout-ms: 10000
+    read-timeout-ms: 10000
+    write-timeout-ms: 10000
+    max-in-memory-size: 10485750
+    content-type: 'application/vnd.api.v1+json'
+    accept-type: application/json
+    base-url: 'http://elastic-query-service/elastic-query-service/documents'
+
+spring:
+  thymeleaf:
+    cache: false
+
+user-config:
+  username: test
+  password: '{cipher}73617456b40fc6064d8e86958db8c2f387d226860767fd50ffaa67f175f75cb7b24396dd04469845eaaffd1e2679e76f'
+  roles: USER
