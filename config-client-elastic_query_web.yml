@@ -5,7 +5,7 @@ elastic-query-web-client:
     write-timeout-ms: 10000
     max-in-memory-size: 10485750
     content-type: 'application/vnd.api.v1+json'
-    accept-type: application/json
+    accept-type: 'application/vnd.api.v1+json'
     base-url: 'http://localhost:8183/elastic-query-service/documents'
   query-by-text:
     method: POST
